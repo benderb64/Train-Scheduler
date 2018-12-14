@@ -6,6 +6,7 @@ var config = {
     storageBucket: "",
     messagingSenderId: "623681276132"
   };
+
   firebase.initializeApp(config);
 
   /*arbitrary code to see if connected to firebase
@@ -15,8 +16,9 @@ var config = {
       name: "BLB",
       score: 43
   }
-  */
+  
   ref.push(data);
+  */
 
  console.log(firebase);
 
@@ -31,18 +33,25 @@ var config = {
   time = $("#firstTrainTime").val().trim();
   frequency = $("#frequency").val().trim();
 
- $("#submit").click( function() {
+ $("#submit1").click( function(event) {
+     event.preventDefault()
+     console.log("hi");
+
     name = $("#trainName").val().trim();
     destination = $("#trainDestination").val().trim();
     time = $("#firstTrainTime").val().trim();
     frequency = $("#frequency").val().trim();
-     $("#trainTable tr:last").after(
+     $(".table tr:last").after(
          "<tr>" +
-         "<td>" + trainNumber + "</td>" +
+         "<td>" + "</td>" +
          "<td>" + $("#trainName").val() + "</td>" +
          "<td>" + $("#trainDestination").val() + "</td>" +
+         "<td"  + $("#firstTrainTime").val() + "</td>" +
+         "<td>" + $("#frequency").val() + "</td>" +
          "</tr>"
      )
  });
+
+
 
  
