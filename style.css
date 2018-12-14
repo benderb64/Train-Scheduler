@@ -1,0 +1,44 @@
+#header {
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    color: #F2E576;
+    margin: 51px;
+    margin-right: 23%
+   
+
+    
+}
+
+body {
+    background-image: url("../Train-Scheduler/images/creepytunnel.jpg");
+    background-repeat: no-repeat;
+    
+    
+}
+
+#trainInfo {
+    border: 3px solid #ddd;
+    padding: 100px;
+    margin-left: 34%;
+    margin-top: 200px;
+
+}
+
+.table {
+    color: #F2E576;
+    font-family: 'Black Ops One', cursive;
+}
+
+.panel-title {
+    color: #F2E576;
+    font-family: 'Black Ops One', cursive;
+}
+
+.panel-body {
+    color: #F2E576;
+    width: 30%
+}
+
+.form-group {
+    font-family: 'Black Ops One', cursive;
+}
